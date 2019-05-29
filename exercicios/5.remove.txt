@@ -1,0 +1,1 @@
+db.tasks.remove({"_id" : ObjectId("5ceebbdcbfdd3d79b2b3b9c6")})

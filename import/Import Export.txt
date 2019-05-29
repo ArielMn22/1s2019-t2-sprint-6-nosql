@@ -1,0 +1,6 @@
+Import:
+	$ mongoimport --db <NOME_DO_BANCO> -c <NOME_DA_COLLECTION> --type <TIPO_DO_ARQUIVO> --headerline --file <NOME_DO_ARQUIVO_MAIS_EXTENSAO>
+
+Export:
+	$ mongoexport --db <NOME_DO_BANCO> --collection <NOME_DA_COLECAO> --out <NOME_DO_ARQUIVO_MAIS_EXTENSAO>
+

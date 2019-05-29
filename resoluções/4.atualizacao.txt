@@ -1,0 +1,53 @@
+1.	Atualize os registros criados no exercício anterior, com os filtros abaixo (não se esqueça de buscar pelo _id):
+Titulo = Titulo Uava
+Descrição = Java Best
+Concluída = verdadeiro
+
+Titulo = Titulo OSharp
+Descrição = CShark
+Concluída = falso
+
+Titulo = Titulo Pirebase
+Descrição = Fireb4se
+
+Titulo = Titulo YMicrosoft
+Descrição = MicroSOFT
+
+Titulo = Titulo Roracle
+Descrição = Oracle Inc.
+Data de Inclusão = data de hoje
+
+// Code
+
+db.tasks.update({ "_id" : ObjectId("5ceec195bfdd3d79b2b3b9c7") },
+{ $set : {
+	"titulo" : "Titulo Uava",
+	"descricao" : "Java Best",
+	"concluida" : true
+}})
+
+db.tasks.update({"_id" : ObjectId("5ceec195bfdd3d79b2b3b9c8")},
+{ $set : {
+	"titulo" : "Titulo Osharp",
+	"descricao" : "CShark",
+	"concluida" : false
+}})
+
+db.tasks.update({"_id" : ObjectId("5ceec195bfdd3d79b2b3b9c9")},
+{ $set : {
+	"titulo" : "Titulo Pirebase",
+	"descricao" : "Fireb4se",
+}})
+
+db.tasks.update({"_id" : ObjectId("5ceec195bfdd3d79b2b3b9ca")},
+{ $set : {
+	"titulo" : "Titulo YMicrosoft",
+	"descricao" : "MicroSOFT",
+}})
+
+db.tasks.update({"_id" : ObjectId("5ceec195bfdd3d79b2b3b9cb")},
+{ $set : {
+	"titulo" : "Titulo Roracle",
+	"descricao" : "Oracle Inc.",
+	"dataDeInclusao" : new Date()
+}})
